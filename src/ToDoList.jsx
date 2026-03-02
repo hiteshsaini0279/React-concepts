@@ -16,6 +16,16 @@ export default function ToDoList() {
     let deleteTodo = (id) => {
         setTodo( todo.filter((todo) => todo.id != id ));
     }
+
+    let UpperCaseAll=()=>{
+         
+        setTodo(todo.map((todo)=>{
+            return {
+                ...todo,
+                task: todo.task.toUpperCase(),
+            };
+          }))
+    }
     return (
         <div>
           
@@ -39,7 +49,11 @@ export default function ToDoList() {
                     ))
 
 
-}</ul>
+                }</ul>
+            <br></br>
+            <button onClick={UpperCaseAll}> UpperCase ALl</button>
+
+
         </div>
     )
 }
