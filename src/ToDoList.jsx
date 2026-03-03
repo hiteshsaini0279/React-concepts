@@ -37,7 +37,7 @@ export default function ToDoList() {
         }else{
             return todo;
         }
-          }))
+          }));
     }
     return (
         <div>
@@ -61,11 +61,9 @@ export default function ToDoList() {
                         <button onClick={()=>MarkAsDone(todo.id)}> Mark As Done</button>
                             </li>
                     ))
-
-
                 }</ul>
             <br></br>
             <button onClick={MarkAllDone}> Mark All as Done </button>
         </div>
-    )
+    );
 }
