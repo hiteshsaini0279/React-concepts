@@ -6,6 +6,7 @@ import Lottery from './Lottery';
 import Ticket from './Ticket';
 import {sum} from "./helper";
 import Form from './Form';
+import CommentsForm from './CommentsForm';
 function App() {
   let WinnCondition=(ticket) =>{
      return ticket.every((num)=>num===ticket[0]);
@@ -16,7 +17,8 @@ function App() {
 {/* <Lottery n={3} WinnCondition={WinnCondition} /> */}
 {/* <Ticket ticket={[1,2,3]}/>
 <Ticket ticket={[1,2,23,34,3]}/> */}
-<Form />
+{/* <Form /> */}
+<CommentsForm />
     </>
   )
 }
