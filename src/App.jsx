@@ -9,6 +9,7 @@ import Form from './Form';
 import CommentsForm from './CommentsForm';
 import Comment from './Comment';
 import Counter from './Counter';
+import Joker from './Joker';
 function App() {
   let WinnCondition=(ticket) =>{
      return ticket.every((num)=>num===ticket[0]);
@@ -22,7 +23,8 @@ function App() {
 {/* <Form /> */}
 {/* <CommentsForm /> */}
 {/* <Comment /> */}
-<Counter />
+{/* <Counter /> */}
+<Joker />
     </>
   )
 }
